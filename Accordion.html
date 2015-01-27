@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="expanderModule">
+<head>
+	<meta charset="UTF-8">
+	<title>January 27th,2015</title>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+
+<body ng-controller='SomeController'>
+	<accordion>
+		<expander class="btn btn-info" ng-repeat='expander in expanders' expander-title='expander.title'>
+			{{expander.text}}
+			
+		</expander>
+			
+	</accordion>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="js/Accordion.js"></script>	
+</body>
+
+</html>
